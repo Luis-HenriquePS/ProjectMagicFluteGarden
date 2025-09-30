@@ -1,0 +1,584 @@
+@font-face {
+    font-family: 'Antropos';
+    src: url('../font/antropos.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    padding: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #305930;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    border-radius: 8px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 8px 0;
+    border-radius: 8px;
+}
+
+.nav-bar a {
+    font-size: 1.2em;
+    color: #FF7518;
+    padding: 8px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background-color: #FF7518;
+    color: #305930;
+}
+
+header.shrink {
+    height: 70px;
+    font-size: 0.9em;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header.shrink a {
+    color: #305930;
+    font-weight: 600;
+}
+
+.menu-btn {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+
+.close-btn {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 2.7em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.banner {
+    background: no-repeat;
+    background-image: url('.././img/banner/banner.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.filter {
+    position: absolute;
+    width: 100vw;
+    height: 750px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner img {
+    z-index: 2;
+}
+
+
+.apresentacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #305930;
+}
+
+.apresentacao h2 {
+    font-family: 'Antropos', sans-serif;
+    color: #FF7518;
+    font-weight: normal;
+}
+
+.apresentacao p {
+    color: #FFFFFF;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.conheca-escola {
+    background: no-repeat;
+    background-image: url('../img/escola/fundo-escola.png');
+    background-size: 100% 100%;
+    height: fit-content;
+    padding: 50px 0;
+    font-family: 'Antropos', sans-serif;
+    color: #305930;
+    font-weight: normal;
+}
+
+.conheca-escola h2 {
+    text-align: center;
+    margin: 5vw 0;
+}
+
+.foto-escola {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.box p {
+    text-align: center;
+}
+
+.contato {
+    background-color: rgba(43, 107, 47, 0.2);
+}
+
+.contato h2 {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Antropos', sans-serif;
+    color: #305930;
+}
+
+.divisao {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blocos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tel-mail h3,
+.endereco h3,
+.horario h3 {
+    font-family: 'Antropos', sans-serif;
+    color: #305930;
+    font-weight: normal;
+}
+
+.tel-mail {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.tel-mail div {
+    background-color: #FFFFFF;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.endereco,
+.horario {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.mapa {
+    border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background-color: #305930;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 50px;
+}
+
+.social-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.social-footer a {
+    line-height: 1.6;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.whatsapp {
+    width: 0;
+    position: fixed;
+    top: 80vh;
+    right: 20px;
+}
+
+.whatsapp a {
+    text-decoration: none;
+}
+
+.whats-img {
+    position: absolute;
+    font-family: 'Antropos', sans-serif;
+    width: fit-content;
+    top: 30px;
+    right: 5px;
+}
+
+.whats-img img {
+    width: 70px;
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    header.shrink img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .banner,
+    .banner img {
+        height: 750px;
+    }
+
+    .banner img {
+        padding-top: 120px;
+        max-height: 750px;
+    }
+
+    .apresentacao {
+        padding: 50px 10vw;
+    }
+
+    .apresentacao h2 {
+        font-size: 3em;
+    }
+
+    .apresentacao p {
+        font-size: 1.5em;
+    }
+
+    .conheca-escola h2 {
+        font-size: 3em;
+    }
+
+    .foto-escola {
+        margin: 0 10vw;
+    }
+
+    .box {
+        width: 320px;
+    }
+
+    .box img {
+        width: 17vw;
+        height: 20vw;
+    }
+
+    .box p {
+        font-size: 1.5em;
+    }
+
+    .contato {
+        padding: 20px 0;
+    }
+
+    .tel-mail {
+        width: 550px;
+    }
+
+    .tel-mail div {
+        padding: 0 50px;
+    }
+
+    .endereco,
+    .horario {
+        width: 550px;
+        padding: 0 50px;
+    }
+
+    .mapa {
+        margin: 10px;
+        width: 550px;
+        height: 436.417px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        height: 80px;
+        width: 80px;
+    }
+
+    .nav-bar a {
+        font-size: 1em;
+    }
+
+    header.shrink img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .banner,
+    .banner img {
+        height: 600px;
+    }
+
+    .banner img {
+        padding-top: 100px;
+        max-height: 600px;
+    }
+
+    .apresentacao {
+        padding: 50px 10vw;
+    }
+
+    .apresentacao h2 {
+        text-align: center;
+        font-size: 2.7em;
+    }
+
+    .apresentacao p {
+        font-size: 1.3em;
+    }
+
+    .conheca-escola h2 {
+        font-size: 3em;
+    }
+
+    .foto-escola {
+        margin: 0 10vw;
+    }
+
+    .box {
+        width: 320px;
+    }
+
+    .box img {
+        width: 17vw;
+        height: 20vw;
+    }
+
+    .box p {
+        font-size: 1.2em;
+    }
+
+    .contato {
+        padding: 20px 0;
+    }
+
+    .tel-mail {
+        width: 550px;
+    }
+
+    .tel-mail div {
+        padding: 0 50px;
+    }
+
+    .endereco,
+    .horario {
+        width: 550px;
+        padding: 0 50px;
+    }
+
+    .mapa {
+        margin: 10px;
+        width: 550px;
+        height: 436.417px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin: auto;
+        height: 80px;
+        width: 80px;
+    }
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    header.shrink .menu-btn {
+        color: #305930;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 200px;
+        height: 100%;
+        background-color: #305930;
+        padding-top: 80px;
+        transition: left 0.3s ease;
+    }
+
+    .nav-bar.active {
+        right: 0;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-bar a {
+        padding: 1rem;
+        font-size: 1.5em;
+    }
+
+    .nav-bar a:hover {
+        background-color: transparent;
+        color: #FF7518;
+    }
+
+    .close-btn {
+        display: block;
+    }
+
+    header.shrink img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .banner,
+    .banner img {
+        height: 600px;
+    }
+
+    .banner img {
+        padding-top: 100px;
+        max-height: 600px;
+    }
+
+    .apresentacao {
+        padding: 50px 10vw;
+    }
+
+    .apresentacao h2 {
+        text-align: center;
+        font-size: 2.7em;
+    }
+
+    .apresentacao p {
+        font-size: 1.3em;
+    }
+
+    .conheca-escola h2 {
+        font-size: 5vw;
+        margin-bottom: 70px;
+    }
+
+    .foto-escola {
+        margin: 0 10vw;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 320px;
+    }
+
+    .box img {
+        width: 290px;
+        height: 320px;
+    }
+
+    .box p {
+        font-size: 1.2em;
+    }
+
+    .contato {
+        padding: 20px 5vw;
+    }
+
+    .tel-mail div,
+    .endereco,
+    .horario,
+    .mapa {
+        width: 70vw;
+        padding: 0;
+        text-align: center;
+    }
+
+    .tel-mail {
+        flex-direction: column;
+    }
+
+    .tel-mail div {
+        padding: 0 50px;
+    }
+
+    .endereco,
+    .horario {
+        padding: 0 50px;
+    }
+
+    .mapa {
+        margin: 10px;
+        height: 400px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .whatsapp {
+        right: -70px;
+    }
+
+    .whats-img img{
+        width: 50px;
+    }
+}
