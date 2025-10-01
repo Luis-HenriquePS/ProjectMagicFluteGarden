@@ -109,6 +109,7 @@ header.shrink a {
     align-items: center;
     flex-direction: column;
     background-color: #305930;
+    z-index: 100;
 }
 
 .apresentacao h2 {
@@ -159,6 +160,28 @@ header.shrink a {
 .box p {
     text-align: center;
 }
+
+.instagram-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 15vw;
+    padding: 20px 0;
+}
+
+.instagram-box h2 {
+    font-size: 3em;
+    font-family: 'Antropos', sans-serif;
+    color: #305930;
+    text-align: center;
+}
+
+.instagram-media {
+    width: 50vw;
+    border-radius: 20px;
+}
+
 
 .contato {
     background-color: rgba(43, 107, 47, 0.2);
@@ -224,6 +247,7 @@ footer {
     background-color: #305930;
     color: #FFFFFF;
     font-size: 1.2em;
+    font-weight: 500;
 }
 
 .footer-content {
@@ -365,7 +389,7 @@ footer {
     }
 
     .banner,
-    .banner img {
+    .banner img, .filter {
         height: 600px;
     }
 
@@ -455,6 +479,11 @@ footer {
         color: #305930;
     }
 
+    header.shrink a {
+        color: #FF7518;
+        font-weight: 200;
+    }
+
     .nav-bar {
         position: fixed;
         top: 0;
@@ -478,6 +507,7 @@ footer {
     .nav-bar a {
         padding: 1rem;
         font-size: 1.5em;
+        color: #FF7518;
     }
 
     .nav-bar a:hover {
@@ -493,9 +523,16 @@ footer {
         height: 40px;
         width: 40px;
     }
+    header.shrink nav {
+        background-color: #FFFFFF;
+        font-size: 1.1em;
+    }
+    header.shrink .close-btn {
+        color: #FF7518;
+    }
 
     .banner,
-    .banner img {
+    .banner img,.filter {
         height: 600px;
     }
 
@@ -510,7 +547,7 @@ footer {
 
     .apresentacao h2 {
         text-align: center;
-        font-size: 2.7em;
+        font-size: 6vw;
     }
 
     .apresentacao p {
@@ -518,7 +555,7 @@ footer {
     }
 
     .conheca-escola h2 {
-        font-size: 5vw;
+        font-size: 6vw;
         margin-bottom: 70px;
     }
 
@@ -538,6 +575,10 @@ footer {
 
     .box p {
         font-size: 1.2em;
+    }
+
+    .instagram-box h2 {
+        font-size: 6vw;
     }
 
     .contato {

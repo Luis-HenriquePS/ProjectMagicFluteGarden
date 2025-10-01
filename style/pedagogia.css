@@ -33,7 +33,6 @@ header {
     gap: 15px;
     padding: 8px 0;
     border-radius: 8px;
-    background-color: #305930;
 }
 
 .nav-bar a {
@@ -50,18 +49,23 @@ header {
 }
 
 header.shrink {
-    height: 50px;
+    height: 70px;
     font-size: 0.9em;
     background-color: #FFFFFF;
     justify-content: space-between;
     padding: 0 20px;
 }
 
+header.shrink a {
+    color: #305930;
+    font-weight: 600;
+}
+
 .menu-btn {
     font-size: 1.8rem;
     background: none;
     border: none;
-    color: white;
+    color: #FFFFFF;
     cursor: pointer;
     display: none;
 }
@@ -91,13 +95,14 @@ main {
 
 .bloco-texto {
     margin: 50px 5vw;
-    border-radius: 12px;
+    border-radius: 200px;
 }
 
 .bloco-texto h2 {
     margin: auto 7vw;
     padding-top: 50px;
     font-size: 2.2em;
+    font-family: 'Antropos', sans-serif;
 }
 
 .bloco-texto p {
@@ -105,6 +110,7 @@ main {
     padding-top: 20px;
     padding-bottom: 50px;
     font-size: 1.5em;
+    color: #305930;
 }
 
 .laranja {
@@ -205,8 +211,6 @@ footer {
     border-radius: 50px;
 }
 
-
-
 @media screen and (min-width: 1024px) {
     .logo {
         height: 100px;
@@ -216,16 +220,6 @@ footer {
     header.shrink img {
         height: 40px;
         width: 40px;
-    }
-
-    .banner,
-    .banner img {
-        height: 750px;
-    }
-
-    .banner img {
-        padding-top: 120px;
-        max-height: 750px;
     }
 }
 
@@ -243,6 +237,19 @@ footer {
         height: 40px;
         width: 40px;
     }
+
+    .bloco-texto {
+        border-radius: 100px;
+    }
+
+    .bloco-texto h2{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .bloco-texto p {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -259,17 +266,24 @@ footer {
 
     .menu-btn {
         display: block;
+        position: absolute;
+        right: 20px;
     }
 
     header.shrink .menu-btn {
         color: #305930;
     }
 
+    header.shrink a {
+        color: #FF7518;
+        font-weight: 200;
+    }
+
     .nav-bar {
         position: fixed;
         top: 0;
         right: -250px;
-        width: 250px;
+        width: 200px;
         height: 100%;
         background-color: #305930;
         padding-top: 80px;
@@ -277,7 +291,7 @@ footer {
     }
 
     .nav-bar.active {
-        right: 0
+        right: 0;
     }
 
     .nav-bar ul {
@@ -288,6 +302,7 @@ footer {
     .nav-bar a {
         padding: 1rem;
         font-size: 1.5em;
+        color: #FF7518;
     }
 
     .nav-bar a:hover {
@@ -302,6 +317,27 @@ footer {
     header.shrink img {
         height: 40px;
         width: 40px;
+    }
+    header.shrink nav {
+        background-color: #FFFFFF;
+        font-size: 1.1em;
+    }
+    header.shrink .close-btn {
+        color: #FF7518;
+    }
+
+    .bloco-texto {
+        border-radius: 100px;
+    }
+
+    .bloco-texto h2 {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .bloco-texto p {
+        text-align: justify;
+        font-size: 1.2em;
     }
 
     .whatsapp {
