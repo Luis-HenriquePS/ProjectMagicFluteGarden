@@ -36,7 +36,6 @@ header {
     gap: 15px;
     padding: 8px 0;
     border-radius: 8px;
-    background-color: #305930;
 }
 
 .nav-bar a {
@@ -53,18 +52,23 @@ header {
 }
 
 header.shrink {
-    height: 50px;
+    height: 70px;
     font-size: 0.9em;
     background-color: #FFFFFF;
     justify-content: space-between;
     padding: 0 20px;
 }
 
+header.shrink a {
+    color: #305930;
+    font-weight: 600;
+}
+
 .menu-btn {
     font-size: 1.8rem;
     background: none;
     border: none;
-    color: white;
+    color: #FFFFFF;
     cursor: pointer;
     display: none;
 }
@@ -114,7 +118,17 @@ main {
 .bloco-fotos {
     margin: 50px 5vw;
     border-radius: 12px;
-    background-color: #B5EAD7 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.bloco-fotos img {
+    width: 25vw;
+    object-fit: cover;
+    min-height: 250px;
+    max-height: 550px;
 }
 
 footer {

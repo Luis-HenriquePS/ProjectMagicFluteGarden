@@ -36,7 +36,6 @@ header {
     gap: 15px;
     padding: 8px 0;
     border-radius: 8px;
-    background-color: #305930;
 }
 
 .nav-bar a {
@@ -53,18 +52,23 @@ header {
 }
 
 header.shrink {
-    height: 50px;
+    height: 70px;
     font-size: 0.9em;
     background-color: #FFFFFF;
     justify-content: space-between;
     padding: 0 20px;
 }
 
+header.shrink a {
+    color: #305930;
+    font-weight: 600;
+}
+
 .menu-btn {
     font-size: 1.8rem;
     background: none;
     border: none;
-    color: white;
+    color: #FFFFFF;
     cursor: pointer;
     display: none;
 }
@@ -111,6 +115,7 @@ main {
     margin: 25px 10vw;
     font-size: 1.5em;
     color: #305930;
+    font-weight: 550;
 }
 
 .txt-estrutura {
@@ -303,6 +308,29 @@ footer {
         height: 40px;
         width: 40px;
     }
+        .contato {
+        padding: 20px 0;
+    }
+
+    .tel-mail {
+        width: 550px;
+    }
+
+    .tel-mail div {
+        padding: 0 50px;
+    }
+
+    .endereco,
+    .horario {
+        width: 550px;
+        padding: 0 50px;
+    }
+
+    .mapa {
+        margin: 10px;
+        width: 550px;
+        height: 436.417px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -364,11 +392,46 @@ footer {
         width: 40px;
     }
 
+    
+    .contato {
+        padding: 20px 5vw;
+    }
+
+    .tel-mail div,
+    .endereco,
+    .horario,
+    .mapa {
+        width: 70vw;
+        padding: 0;
+        text-align: center;
+    }
+
+    .tel-mail {
+        flex-direction: column;
+    }
+
+    .tel-mail div {
+        padding: 0 50px;
+    }
+
+    .endereco,
+    .horario {
+        padding: 0 50px;
+    }
+
+    .mapa {
+        margin: 10px;
+        height: 400px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+
     .whatsapp {
         right: -70px;
     }
 
-    .whats-img img {
+    .whats-img img{
         width: 50px;
     }
 }
