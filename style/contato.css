@@ -392,6 +392,10 @@ footer {
         width: 40px;
     }
 
+    main {
+        padding-top: 80px;
+    }
+
     
     .contato {
         padding: 20px 5vw;
