@@ -411,8 +411,16 @@ footer {
         color: #FF7518;
     }
 
-    .bloco-texto h2 {
+    .bloco-texto {
         padding-top: 80px;
+    }
+
+    .bloco-texto h2 {
+        font-size: 6vw;
+    }
+
+    .bloco-texto p {
+        font-size: 1.3em;
     }
 
     .contato {
