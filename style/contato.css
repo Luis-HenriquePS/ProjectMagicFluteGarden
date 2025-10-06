@@ -96,7 +96,7 @@ main {
     font-size: 3em;
 }
 
-.bloco-texto {
+.bloco-texto h2 {
     font-family: 'Antropos', sans-serif;
     color: #305930;
     text-align: center;
