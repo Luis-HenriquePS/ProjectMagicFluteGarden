@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'Antropos';
+    src: url('../font/antropos.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    padding: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #305930;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    border-radius: 8px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 8px 0;
+    border-radius: 8px;
+}
+
+.nav-bar a {
+    font-size: 1.2em;
+    color: #FF7518;
+    padding: 8px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background-color: #FF7518;
+    color: #305930;
+}
+
+header.shrink {
+    height: 70px;
+    font-size: 0.9em;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header.shrink a {
+    color: #305930;
+    font-weight: 600;
+}
+
+.menu-btn {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+
+.close-btn {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 2.7em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    padding-top: 200px;
+}
+
+.titulo-peg {
+    font-family: 'Antropos', sans-serif;
+    color: #305930;
+    text-align: center;
+    font-size: 3em;
+}
+
+.bloco-texto {
+    margin: 50px 5vw;
+    border-radius: 200px;
+}
+
+.bloco-texto h2 {
+    margin: auto 7vw;
+    padding-top: 50px;
+    font-size: 2.2em;
+    font-family: 'Antropos', sans-serif;
+}
+
+.bloco-texto p {
+    margin: 25px 10vw;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 1.5em;
+    color: #305930;
+}
+
+.laranja {
+    background-color: #FFD8A8;
+}
+
+.laranja h2 {
+    color: #CC7915;
+}
+
+.vermelho {
+    background-color: #FFADAD;
+}
+
+.vermelho h2 {
+    color: #A21515;
+}
+
+.verde {
+    background-color: #B5EAD7;
+}
+
+.verde h2 {
+    color: #305930;
+}
+
+.amarelo {
+    background-color: #FFF5BA;
+}
+
+.amarelo h2 {
+    color: #B29B18;
+}
+
+.azul {
+    background-color: #A7D8F8;
+}
+
+.azul h2 {
+    color: #135B8B;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background-color: #305930;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 50px;
+}
+
+.social-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.social-footer a {
+    line-height: 1.6;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.whatsapp {
+    width: 0;
+    position: fixed;
+    top: 80vh;
+    right: -50px;
+}
+
+.whatsapp a {
+    text-decoration: none;
+}
+
+.whats-img {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Antropos', sans-serif;
+    width: 250px;
+    top: 30px;
+    right: 5px;
+}
+
+.whats-img img {
+    width: 70px;
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    header.shrink img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        height: 80px;
+        width: 80px;
+    }
+
+    .nav-bar a {
+        font-size: 1em;
+    }
+
+    header.shrink img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .bloco-texto {
+        border-radius: 100px;
+    }
+
+    .bloco-texto h2{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .bloco-texto p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin: auto;
+        height: 80px;
+        width: 80px;
+    }
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    header.shrink .menu-btn {
+        color: #305930;
+    }
+
+    header.shrink a {
+        color: #FF7518;
+        font-weight: 200;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 200px;
+        height: 100%;
+        background-color: #305930;
+        padding-top: 80px;
+        transition: left 0.3s ease;
+    }
+
+    .nav-bar.active {
+        right: 0;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-bar a {
+        padding: 1rem;
+        font-size: 1.5em;
+        color: #FF7518;
+    }
+
+    .nav-bar a:hover {
+        background-color: transparent;
+        color: #FF7518;
+    }
+
+    .close-btn {
+        display: block;
+    }
+
+    header.shrink img {
+        height: 40px;
+        width: 40px;
+    }
+    header.shrink nav {
+        background-color: #FFFFFF;
+        font-size: 1.1em;
+    }
+    header.shrink .close-btn {
+        color: #FF7518;
+    }
+
+    .bloco-texto {
+        border-radius: 100px;
+    }
+
+    .bloco-texto h2 {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .bloco-texto p {
+        text-align: justify;
+        font-size: 1.2em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .whatsapp {
+        right: -70px;
+    }
+
+    .whats-img img {
+        width: 50px;
+    }
+}
